@@ -1,0 +1,12 @@
+type: ragster.lib.PyAirbyte
+
+attributes:
+  source: github
+  config:
+    repositories:
+      - "dagster-io/dagster"
+    start_date: "2025-01-01T00:00:00Z"
+    credentials:
+      personal_access_token: "{{ env('GITHUB_TOKEN') }}"
+  streams:
+    - stream: issues

@@ -1,0 +1,9 @@
+type: ragster.lib.ChromaDB
+
+attributes:
+  path: "./chromadb"
+  ingests:
+    - to_collection_name: dagster_issues
+      dep: airbyte_github_issues
+      id_column: "id"
+      document_column: "body"

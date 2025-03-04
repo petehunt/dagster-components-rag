@@ -1,0 +1,10 @@
+.tmp*
+.venv*
+__pycache__
+*.pyc
+ragster/data
+.cache
+.vscode/schema.json
+*.egg-info
+chromadb
+.env
